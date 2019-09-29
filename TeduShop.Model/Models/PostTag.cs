@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TeduShop.Model.Model
+namespace TeduShop.Model.Models
 {
     [Table("PostTags")]
     public class PostTag
