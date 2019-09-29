@@ -22,7 +22,7 @@ namespace TeduShop.Web.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact erereer page.";
+            ViewBag.Message = "Your contactfdfdf erereer page.";
 
             return View();
         }
