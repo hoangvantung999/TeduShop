@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4D784E98-8163-494D-98B2-2B3B3A4E4E0A}</ProjectGuid>
+    <ProjectGuid>{6BA82F04-6871-408F-A992-F5E10D3FBFAD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TeduShop.Model</RootNamespace>
-    <AssemblyName>TeduShop.Model</AssemblyName>
+    <RootNamespace>TeduShop.Data</RootNamespace>
+    <AssemblyName>TeduShop.Data</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -51,30 +51,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abstract\Auditable.cs" />
-    <Compile Include="Abstract\IAuditable.cs" />
-    <Compile Include="Models\PostTag.cs" />
-    <Compile Include="Models\Footer.cs" />
-    <Compile Include="Models\Menu.cs" />
-    <Compile Include="Models\MenuGroup.cs" />
-    <Compile Include="Models\Order.cs" />
-    <Compile Include="Models\OrderDetail.cs" />
-    <Compile Include="Models\PostCategory.cs" />
-    <Compile Include="Models\Page.cs" />
-    <Compile Include="Models\Post.cs" />
-    <Compile Include="Models\Product.cs" />
-    <Compile Include="Models\ProductCategory.cs" />
-    <Compile Include="Models\ProductTag.cs" />
-    <Compile Include="Models\Slide.cs" />
-    <Compile Include="Models\SupportOnline.cs" />
-    <Compile Include="Models\SystemConfig.cs" />
-    <Compile Include="Models\Tag.cs" />
-    <Compile Include="Models\VisitorStatistic.cs" />
+    <Compile Include="Infrastructure\DbFactory.cs" />
+    <Compile Include="Infrastructure\Disposable.cs" />
+    <Compile Include="Infrastructure\IDbFactory .cs" />
+    <Compile Include="Infrastructure\IUnitOfWork.cs" />
+    <Compile Include="Infrastructure\IRepository.cs" />
+    <Compile Include="Infrastructure\RepositoryBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TeduShopDbContext.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Repository\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TeduShop.Model\TeduShop.Model.csproj">
+      <Project>{4D784E98-8163-494D-98B2-2B3B3A4E4E0A}</Project>
+      <Name>TeduShop.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

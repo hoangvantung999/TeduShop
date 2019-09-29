@@ -7,13 +7,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeduShop.Common", "TeduShop
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeduShop.Model", "TeduShop.Model\TeduShop.Model.csproj", "{4D784E98-8163-494D-98B2-2B3B3A4E4E0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeduShop.Data", "..\TeduShop.Data\TeduShop.Data.csproj", "{92602C4E-C7BF-43C3-8539-3A3199672485}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeduShop.Service", "TeduShop.Service\TeduShop.Service.csproj", "{4FECFA6C-A2F2-4750-BCBE-2962153C8AD2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeduShop.UnitTest", "TeduShop.UnitTest\TeduShop.UnitTest.csproj", "{1950A670-296C-40C0-8448-5A44A434EAB1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeduShop.Web", "TeduShop.Web\TeduShop.Web.csproj", "{5DBBB2AD-7A80-46B2-A3CC-3C65F5F11399}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeduShop.Data", "TeduShop.Data\TeduShop.Data.csproj", "{6BA82F04-6871-408F-A992-F5E10D3FBFAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,6 @@ Global
 		{4D784E98-8163-494D-98B2-2B3B3A4E4E0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D784E98-8163-494D-98B2-2B3B3A4E4E0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D784E98-8163-494D-98B2-2B3B3A4E4E0A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{92602C4E-C7BF-43C3-8539-3A3199672485}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{92602C4E-C7BF-43C3-8539-3A3199672485}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{92602C4E-C7BF-43C3-8539-3A3199672485}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{92602C4E-C7BF-43C3-8539-3A3199672485}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4FECFA6C-A2F2-4750-BCBE-2962153C8AD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4FECFA6C-A2F2-4750-BCBE-2962153C8AD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FECFA6C-A2F2-4750-BCBE-2962153C8AD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,6 +41,10 @@ Global
 		{5DBBB2AD-7A80-46B2-A3CC-3C65F5F11399}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DBBB2AD-7A80-46B2-A3CC-3C65F5F11399}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DBBB2AD-7A80-46B2-A3CC-3C65F5F11399}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BA82F04-6871-408F-A992-F5E10D3FBFAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BA82F04-6871-408F-A992-F5E10D3FBFAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BA82F04-6871-408F-A992-F5E10D3FBFAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BA82F04-6871-408F-A992-F5E10D3FBFAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
